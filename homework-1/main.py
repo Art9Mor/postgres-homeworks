@@ -2,7 +2,7 @@
 import psycopg2
 import csv
 
-with open('north_data/customer_data.csv', encoding='utf-8') as file:
+with open('north_data/customers_data.csv', encoding='utf-8') as file:
     file_reader = csv.reader(file, delimiter=',')
 
     conn = psycopg2.connect(
