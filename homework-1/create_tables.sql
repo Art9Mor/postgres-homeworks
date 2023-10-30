@@ -18,7 +18,7 @@ CREATE TABLE employees
 
 CREATE TABLE orders
 (
-	order_id SERIAL PRIMARY KEY,
+	order_id INT PRIMARY KEY,
 	customer_id VARCHAR(10) NOT NULL,
 	FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
 	employee_id INT NOT NULL,
