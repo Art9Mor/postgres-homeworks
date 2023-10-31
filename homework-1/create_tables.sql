@@ -20,7 +20,7 @@ CREATE TABLE orders
 (
 	order_id SERIAL PRIMARY KEY,
 	customer_id VARCHAR(10) NOT NULL,
-	FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
+  FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
 	employee_id INT NOT NULL,
 	FOREIGN KEY(employee_id) REFERENCES employees(employee_id),
 	order_date DATE NOT NULL,
