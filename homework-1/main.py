@@ -52,7 +52,7 @@ with open('north_data/employees_data.csv', encoding='utf-8') as file:
     finally:
         conn.close()
 
-with open('north_data/orders_ata.csv', encoding='utf-8') as file:
+with open('north_data/orders_data.csv', encoding='utf-8') as file:
     file_reader = csv.reader(file, delimiter=',')
 
     conn = psycopg2.connect(
