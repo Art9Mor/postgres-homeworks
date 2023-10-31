@@ -8,7 +8,7 @@ with open('north_data/customers_data.csv', encoding='utf-8') as file:
     conn = psycopg2.connect(
         host='localhost',
         database='north',
-        user='artem',
+        user='postgres',
         password='294672'
     )
 
@@ -33,7 +33,7 @@ with open('north_data/employees_data.csv', encoding='utf-8') as file:
     conn = psycopg2.connect(
         host='localhost',
         database='north',
-        user='artem',
+        user='postgres',
         password='294672'
     )
 
@@ -58,7 +58,7 @@ with open('north_data/orders_data.csv', encoding='utf-8') as file:
     conn = psycopg2.connect(
         host='localhost',
         database='north',
-        user='artem',
+        user='postgres',
         password='294672'
     )
 
