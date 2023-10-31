@@ -19,7 +19,7 @@ CREATE TABLE employees
 CREATE TABLE orders
 (
 	order_id SMALLINT PRIMARY KEY,
-	customer_id VARCHAR(10) NOT NULL,
+  customer_id VARCHAR(10) NOT NULL,
 	FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
 	employee_id INT NOT NULL,
 	FOREIGN KEY(employee_id) REFERENCES employees(employee_id),
